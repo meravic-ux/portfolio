@@ -190,25 +190,22 @@
         margin-top: 20px;
       }
 
-      /* cat-area fills remaining space, cat image sits at bottom-right */
+      /* cat pinned to bottom-right, sized by screen height */
       .cat-area {
-        position: static;
-        flex: 1;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         left: auto;
-        right: auto;
-        bottom: auto;
         top: auto;
         width: auto;
         max-width: none;
+        display: block;
       }
 
       .cat-img {
-        width: 52vw;
-        max-width: 210px;
-        height: auto;
+        height: 35vh;
+        width: auto;
+        display: block;
         transform: scaleX(-1);
       }
     }
